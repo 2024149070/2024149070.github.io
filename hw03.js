@@ -231,7 +231,7 @@ function intersection(center,r, startPoint, tempEndPoint){
     let D = B**2 - 4*A*C ;
 
     let result = [];
-    if(Math.abs(D) < 0.01){
+    if(Math.abs(D) < 0.0000001){
         let t =  (-B)/(2*A);
         if(Math.abs(t-0.5) <= 0.5 ){
             result.push(a*t+b, c*t+d);
