@@ -260,7 +260,7 @@ function render() {
     gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
 
     shader.use();
-    gl.enable(gl.PROGRAM_POINT_SIZE);
+    
     if(!isCircleDrawing && r){
         shader.setVec4("u_color", [1.0, 0.0, 1.0, 1.0]);
         gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(circle(center,r,points)), gl.STATIC_DRAW);
