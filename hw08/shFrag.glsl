@@ -34,7 +34,7 @@ void main() {
     vec3 norm = normalize(normal);
     //vec3 lightDir = normalize(light.position - fragPos);
     vec3 lightDir = normalize(light.direction);
-    float dotNormLight = float(int(dot(norm, lightDir) * toonLevel))/toonLevel + 0.5/toonLevel;
+    float dotNormLight = float(int(dot(norm, lightDir) * toonLevel))/toonLevel;
     //float dotNormLight = dot(norm, lightDir);
     float diff = max(dotNormLight, 0.0); 
     vec3 diffuse = light.diffuse * diff * rgb;  
