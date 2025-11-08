@@ -198,8 +198,6 @@ async function main() {
         cylinder.copyVertexNormalsToNormals();
         cylinder.updateNormals();
         shadingMode = 'SMOOTH';
-        updateText(textOverlay3, "shading mode: " + shadingMode);
-
         setupKeyboardEvents();
 
         // call the render function the first time for animation
